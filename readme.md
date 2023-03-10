@@ -1,5 +1,5 @@
 # introduction
-Gravity-Vite-Vue
+Gravity-Vite
 A tool for building and deploying web applications using Node.js, Vite, Vue.js, Tailwind CSS, and Prettier. Gravity-Vite is a lightweight and powerful Node.js tool for building and deploying web applications with ease. 
 
 It uses Vite as its build tool, Vue.js as its front-end framework, and Tailwind CSS for styling. Gravity-Vite also includes Prettier for code formatting, ensuring that your code is clean and readable
@@ -10,25 +10,29 @@ Gravity-Vite is highly customizable, with a simple and intuitive configuration s
 
 
 # Getting started!!!
-To use Gravity-Vite-Vue in your project, run:
+To use Gravity-Vite in your project, run:
 ```
-npm install gravity-vite-vue
+npm install gravity-vite
+```
+or
+```
+npm i gravity-vite
 ```
 
-Then, create a new Vue.js application using the Gravity-Vite-Vue template:
+Then, create a new Vue.js application using the Gravity-Vite template:
 ```
-npx create-vite-app my-app --template gravity-vite-vue
+npx create-vite-app my-app --template gravity-vite
 ```
 
-This will generate a new Vue.js application with the necessary configuration files and dependencies to use Gravity-Vite-Vue.
+This will generate a new Vue.js application with the necessary configuration files and dependencies to use Gravity-Vite.
 
 
 ## Configuration
-Gravity-Vite-Vue uses Vite as its build tool and includes the @vitejs/plugin-vue plugin for Vue.js support. You can customize the Vite configuration by modifying the `vite.config.js` file.
+Gravity-Vite uses Vite as its build tool and includes the @vitejs/plugin-vue plugin for Vue.js support. You can customize the Vite configuration by modifying the `vite.config.js` file.
 
-Gravity-Vite-Vue also includes Tailwind CSS for styling and includes a basic configuration in `tailwind.config.js`. You can customize the Tailwind CSS configuration by modifying this file.
+Gravity-Vite also includes Tailwind CSS for styling and includes a basic configuration in `tailwind.config.js`. You can customize the Tailwind CSS configuration by modifying this file.
 
-Finally, Gravity-Vite-Vue uses Prettier for code formatting and includes a `.prettierrc` file with a basic configuration. You can customize the Prettier configuration by modifying this file.
+Finally, Gravity-Vite uses Prettier for code formatting and includes a `.prettierrc` file with a basic configuration. You can customize the Prettier configuration by modifying this file.
 
 
 ### Development
