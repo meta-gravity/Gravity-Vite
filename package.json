@@ -2,10 +2,19 @@
   "name": "gravity-vite",
   "version": "1.0.0",
   "description": "Gravity-Vite is a lightweight and powerful Node.js tool for building and deploying web applications with ease.With Gravity-Vite, you can quickly set up a new web application, customize its configuration, and start developing right away. The included Vite development server provides fast and efficient hot reloading, allowing you to see your changes in real-time.",
-  "main": "index.js",
+  "main": "./dist/gravity-vite.js",
+  "module": "./dist/gravity-vite.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/gravity-vite.es.js",
+      "require": "./dist/gravity-vite.js"
+    },
+    "./dist/index.css": "./dist/index.css"
+  },
+
   "scripts": {
-    "test": "build",
-    "dev": "vite"
+    "dev": "vite",
+    "build": "vite build"
   },
   "repository": {
     "type": "git",

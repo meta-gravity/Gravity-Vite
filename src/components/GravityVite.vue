@@ -1,5 +1,5 @@
-<!-- <template>
-    <div :class="themeClass">
+  <template>
+    <div class="gravity-vite" id="GravityVite">
       <button @click="toggleTheme">Toggle {{ currentTheme }} mode</button>
       <div class="p-4 bg-gray-100 dark:bg-gray-900">
         <h1 class="text-3xl font-bold mb-2">Welcome to Gravity-Vite</h1>
@@ -10,11 +10,38 @@
         </div>
       </div>
     </div>
-  </template>
+  </template> 
+
+<script>
+import axios from 'axios';
+
+export default {
+  name: 'GravityVite',
+  data() {
+    return {
+      title: 'Gravity-Vite-Vue App',
+      posts: [],
+    };
+  },
+  created() {
+    axios.get('https://jsonplaceholder.typicode.com/posts')
+      .then((response) => {
+        this.posts = response.data;
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  },
+};
+</script>
+
+<style>
+</style>
+
   
-  <script>
+  <!-- <script>
   export default {
-    name: 'App',
+    name: 'GravityVite',
     data() {
       return {
         currentTheme: 'light',
@@ -51,12 +78,4 @@
   .dark .bg-gray-800 {
     background-color: #4b5563;
   }
-  </style>
-   -->
-
-   <template>
-    <div class="bg-gray-100 min-h-screen flex items-center justify-center">
-      <h1 class="text-4xl font-bold">Hello, Gravity-Vite-Vue!</h1>
-    </div>
-  </template>
-  
+  </style> -->
